@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myapp</title>
+    <title>Myapp Blogger</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,11 @@
   </head>
 
   <body>
+    <% flash.each do |key, value| %>
+      <ul>
+        <li> <%= value %></li>
+      </ul>
+    <% end %>
     <%= yield %>
   </body>
 </html>
