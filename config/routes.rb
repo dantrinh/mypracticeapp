@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   resources :articles
 
-  get '/', to: 'articles#new'
+  get '/', to: 'pages#show'
 
 end

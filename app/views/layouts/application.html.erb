@@ -10,11 +10,8 @@
   </head>
 
   <body>
-    <% flash.each do |key, value| %>
-      <ul>
-        <li> <%= value %></li>
-      </ul>
-    <% end %>
+
+    <%= render partial: 'layouts/messages' %>
     <%= yield %>
   </body>
 </html>
