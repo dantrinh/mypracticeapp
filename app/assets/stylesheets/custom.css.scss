@@ -1,2 +1,25 @@
+//dots for classes
+
+.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #F8F8F8;
+  border-color: #E7E7E7;
+}
+
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+//Hashtags for IDS!!!1
+
+#navbarDropdown {
+  font-size: 1.7em;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset_url('download.png');
+}
