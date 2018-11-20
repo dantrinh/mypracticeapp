@@ -10,5 +10,8 @@ Rails.application.routes.draw do
 
   root :to => "pages#show"
 
+  get 'signup', to: 'users#new'
+
+  resources :users, except: [:new]
 
 end
