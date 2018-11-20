@@ -24,6 +24,7 @@
           <%= link_to 'New Article', new_article_path %>
 
           <% if logged_in? %>
+            <%= "Admin Profile" if current_user.admin? %>
             <%= link_to 'Logout', logout_path, method: :delete %>
             <%= link_to "Edit your profile", edit_user_path(current_user) %>
             <%= link_to "View your profile", user_path(current_user) %>
