@@ -1,7 +1,7 @@
 <%= render 'shared/errors', obj: @user %>
 
 <div class="row">
-  <di class="col-md-12">
+  <div class="col-md-12">
     <%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>
 
       <div class="form-group">
@@ -41,5 +41,5 @@
 
     <%= link_to 'Back to all articles', articles_path %>
 
-  </di>
+  </div>
 </div>
